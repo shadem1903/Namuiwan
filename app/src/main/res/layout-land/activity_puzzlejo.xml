@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Josue.rompeca.PuzzleActivity"
-    android:background="@drawable/img">
+    tools:context=".Josue.rompeca.PuzzleActivity">
 
     <ImageView
         android:layout_width="700dp"
