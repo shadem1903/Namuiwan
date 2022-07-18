@@ -305,16 +305,5 @@
         app:layout_constraintTop_toTopOf="@+id/imgNumeros"
         app:srcCompat="@drawable/numerosmenuve" />
 
-    <ImageView
-        android:id="@+id/imgPregunta"
-        android:layout_width="70dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/interrogacionve" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

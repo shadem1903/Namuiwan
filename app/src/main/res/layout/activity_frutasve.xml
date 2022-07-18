@@ -18,17 +18,6 @@
         app:srcCompat="@drawable/titlefrutasve" />
 
     <ImageView
-        android:id="@+id/imgPregunta"
-        android:layout_width="90dp"
-        android:layout_height="62dp"
-
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView22"
-        app:layout_constraintTop_toTopOf="@+id/imageView22"
-        app:srcCompat="@drawable/interrogacionve"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
         android:id="@+id/imgUchuvas"
         android:layout_width="147dp"
         android:layout_height="264dp"

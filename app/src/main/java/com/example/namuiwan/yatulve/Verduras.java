@@ -16,7 +16,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Verduras extends AppCompatActivity implements View.OnClickListener{
-    ImageView imgCebolla,imgZanahoria,imgTomate,imgPimiento, imgPregunta,imgtitlecebolla,imgtitlezanahoria,imgtitlepimiento,imgtitletomate;
+    ImageView imgCebolla,imgZanahoria,imgTomate,imgPimiento,imgtitlecebolla,imgtitlezanahoria,imgtitlepimiento,imgtitletomate;
     MediaPlayer cebolla,zanahoria,tomate,pimiento,pregunta3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +34,6 @@ public class Verduras extends AppCompatActivity implements View.OnClickListener{
         imgTomate.setOnClickListener(this);
         imgPimiento    = findViewById(R.id.imgPimiento);
         imgPimiento.setOnClickListener(this);
-        imgPregunta = findViewById(R.id.imgPregunta);
-        imgPregunta.setOnClickListener(this);
         imgtitlecebolla = findViewById(R.id.imgtitlecebolla);
         imgtitlecebolla.setOnClickListener(this);
         imgtitlezanahoria = findViewById(R.id.imgtitlezanahoria);
@@ -56,13 +54,6 @@ public class Verduras extends AppCompatActivity implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.imgPregunta:
-                Toast.makeText(Verduras.this, "¿Cual es la zanahoria...?", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(Verduras.this, Pregunta3verdura.class);
-                startActivity(intent1);
-                pregunta3.start();
-                break;
-
             case R.id.imgCebolla:
                 imgtitlezanahoria.setVisibility(View.INVISIBLE);
                 imgtitletomate.setVisibility(View.INVISIBLE);
@@ -95,7 +86,6 @@ public class Verduras extends AppCompatActivity implements View.OnClickListener{
                 imgtitlezanahoria.setVisibility(View.INVISIBLE);
                 imgtitletomate.setVisibility(View.VISIBLE);
                 tomate.start();
-
                 break;
             case R.id.imgPimiento:
                 imgtitlecebolla.setVisibility(View.INVISIBLE);
@@ -103,7 +93,6 @@ public class Verduras extends AppCompatActivity implements View.OnClickListener{
                 imgtitletomate.setVisibility(View.INVISIBLE);
                 imgtitlepimiento.setVisibility(View.VISIBLE);
                 pimiento.start();
-
                 break;
         }
     }

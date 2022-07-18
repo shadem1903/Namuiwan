@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.media.MediaDataSource;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.namuiwan.Menued;
 import com.example.namuiwan.R;
 
 import java.util.Timer;
@@ -56,6 +58,14 @@ public class Pregunta2frutas extends AppCompatActivity implements View.OnClickLi
         imgParlanteve = findViewById(R.id.imgParlanteve);
         imgParlanteve.setOnClickListener(this);
         txtPuntos=findViewById(R.id.txtPuntos);
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode==event.KEYCODE_BACK) {
+            Intent intent = new Intent(Pregunta2frutas.this, Habilidadesnew.class);
+            startActivity(intent);
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     @Override

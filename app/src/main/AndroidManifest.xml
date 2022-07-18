@@ -21,19 +21,29 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".yatulve.Pregunta5numeros"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".yatulve.Habilidadesnew"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".yatulve.Pregunta4numeros"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".yatulve.Habilidadesnew"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".yatulve.Pregunta3numeros"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".yatulve.Habilidadesnew"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".yatulve.Pregunta2numeros"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".yatulve.Habilidadesnew"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".yatulve.Pregunta1numeros"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".yatulve.Habilidadesnew"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".Josue.ArrastrarFiguras.ArrastrarSoltar"
             android:exported="false" />
@@ -71,6 +81,10 @@
         <activity
             android:name=".yatulve.Pregunta1frutas"
             android:exported="false" />
+        <activity
+            android:name=".yatulve.Resultado"
+            android:exported="false"
+            android:parentActivityName=".yatulve.Habilidadesnew"/>
         <activity
             android:name=".BD.LoginIn"
             android:exported="true" />
@@ -194,6 +208,7 @@
 
         <activity android:name=".yatulve.Habilidadesnew"
             android:exported="false"
+            android:parentActivityName=".erikadaniel.activ"
             android:screenOrientation="landscape" />
         <provider
             android:name="androidx.core.content.FileProvider"

@@ -32,8 +32,8 @@
 
     <TextView
         android:id="@+id/txtPuntos"
-        android:layout_width="16dp"
-        android:layout_height="27dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:fontFamily="sans-serif-black"
         android:text="0"
         android:textColor="#F3FFFFFF"

@@ -15,7 +15,7 @@ public class Numeros extends AppCompatActivity implements View.OnClickListener {
 
     ImageView  imgUno, imgDos, imgTres, imgCuatro, imgCinco, imgSeis, imgSiete,
                imgOcho, imgNueve, imgDiez, imgOnce, imgDoce, imgTrece, imgCatorce, imgQuince, imgDiesciseis,
-               imgDiescisiete, imgDiesciocho, imgDiescinueve, imgVeinte,imgPregunta;
+               imgDiescisiete, imgDiesciocho, imgDiescinueve, imgVeinte;
     MediaPlayer serpiente, sonido, num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,
                 num12,num13,num14,num15,num16,num17,num18,num19,num20,pregunta1 ;
     MediaPlayer sounds[] = new MediaPlayer[1];
@@ -92,8 +92,6 @@ public class Numeros extends AppCompatActivity implements View.OnClickListener {
         imgDiescinueve.setOnClickListener(this);
         imgVeinte = findViewById(R.id.imgVeinte);
         imgVeinte.setOnClickListener(this);
-        imgPregunta = findViewById(R.id.imgPregunta);
-        imgPregunta.setOnClickListener(this);
 
         sounds[0]=MediaPlayer.create(this,R.raw.numerosve);
         sonido = MediaPlayer.create(this, R.raw.numerosve);
@@ -126,12 +124,6 @@ public class Numeros extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.imgPregunta:
-                Toast.makeText(Numeros.this, "¿Cual es el 1...?", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(Numeros.this, Pregunta1numeros.class);
-                startActivity(intent1);
-                pregunta1.start();
-                break;
             case R.id.imgUno:
 
                 numero[1].start();

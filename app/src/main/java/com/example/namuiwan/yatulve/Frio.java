@@ -16,7 +16,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Frio extends AppCompatActivity implements View.OnClickListener {
-    ImageView imgUlluco,imgPapaColorada,imgPapaAmarilla,imgRepollo, imgPregunta,imgtitlerepollo,imgtitlepapaamarilla,imgtitlepapacolorada,imgtitleullucos, imgtitlealimentosfrios;
+    ImageView imgUlluco,imgPapaColorada,imgPapaAmarilla,imgRepollo, imgtitlealimentosfrios;
     MediaPlayer ulluco,papacolorada,papaamarilla,repollo,pregunta1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,6 @@ public class Frio extends AppCompatActivity implements View.OnClickListener {
         referenciar();
     }
     private void referenciar() {
-        imgPregunta = findViewById(R.id.imgPregunta);
-        imgPregunta.setOnClickListener(this);
         imgUlluco = findViewById(R.id.imgUlluco);
         imgUlluco.setOnClickListener(this);
         imgPapaColorada = findViewById(R.id.imgPapaColorada);
@@ -35,19 +33,8 @@ public class Frio extends AppCompatActivity implements View.OnClickListener {
         imgPapaAmarilla.setOnClickListener(this);
         imgRepollo    = findViewById(R.id.imgRepollo);
         imgRepollo.setOnClickListener(this);
-       /* imgtitlerepollo = findViewById(R.id.imgtitlerepollo);
-        imgtitlerepollo.setOnClickListener(this);
-        imgtitlepapaamarilla = findViewById(R.id.imgtitlepapaamarilla);
-        imgtitlepapaamarilla.setOnClickListener(this);
-        imgtitlepapacolorada = findViewById(R.id.imgtitlepapacolorada);
-        imgtitlepapacolorada.setOnClickListener(this);
-        imgtitleullucos = findViewById(R.id.imgtitleullucos);
-        imgtitleullucos.setOnClickListener(this);*/
         imgtitlealimentosfrios = findViewById(R.id.imgtitlealimentosfrios);
         imgtitlealimentosfrios.setOnClickListener(this);
-
-
-
         //almacena sonido en la variable gallina
         ulluco    = MediaPlayer.create(this,R.raw.lau);
         papacolorada  = MediaPlayer.create(this,R.raw.pikoye);
@@ -59,13 +46,6 @@ public class Frio extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.imgPregunta:
-                Toast.makeText(Frio.this, "¿Cual es el repollo...?", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(Frio.this, Pregunta1vegefrio.class);
-                startActivity(intent1);
-                pregunta1.start();
-                break;
-
             case R.id.imgUlluco:
                 imgtitlealimentosfrios.setImageResource(R.drawable.titleullucosve);
                 ulluco.start();

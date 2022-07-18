@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -55,6 +56,14 @@ public class Pregunta3verdura extends AppCompatActivity implements View.OnClickL
 
         txtPuntos=findViewById(R.id.txtPuntos);
     }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode==event.KEYCODE_BACK) {
+            Intent intent = new Intent(Pregunta3verdura.this, Habilidadesnew.class);
+            startActivity(intent);
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 
     @Override
     public void onClick(View v) {
@@ -88,9 +97,8 @@ public class Pregunta3verdura extends AppCompatActivity implements View.OnClickL
                     @Override
                     public void run() {
                         Intent intent1 = new Intent(Pregunta3verdura.this, Resultado.class);
-                        startActivity(intent1);
                         zanahoria.start();
-
+                        startActivity(intent1);
                     }
                 };
                 Timer timer2 = new Timer();

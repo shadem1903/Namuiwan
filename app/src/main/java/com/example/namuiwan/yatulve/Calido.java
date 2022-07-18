@@ -31,15 +31,6 @@ public class Calido extends AppCompatActivity implements View.OnClickListener {
         imgMaiz.setOnClickListener(this);
         imgOca    = findViewById(R.id.imgOca);
         imgOca.setOnClickListener(this);
-       /*imgtitlearracacha =findViewById(R.id.imgtitlearracacha);
-        imgtitlearracacha.setOnClickListener(this);
-        imgtitlepapaguata =findViewById(R.id.imgtitlepapaguata);
-        imgtitlepapaguata.setOnClickListener(this);
-        imgtitlemaiz =findViewById(R.id.imgtitlemaiz);
-        imgtitlemaiz.setOnClickListener(this);
-        imgtitleoca =findViewById(R.id.imgtitleoca);
-        imgtitleoca.setOnClickListener(this);
-*/
         imgtraduccioncalidove =findViewById(R.id.imgtraduccioncalidove);
         imgtraduccioncalidove.setOnClickListener(this);
 

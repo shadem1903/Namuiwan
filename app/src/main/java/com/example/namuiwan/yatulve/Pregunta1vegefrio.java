@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.namuiwan.Menued;
 import com.example.namuiwan.R;
 
 import java.util.Timer;
@@ -53,6 +55,14 @@ public class Pregunta1vegefrio extends AppCompatActivity implements View.OnClick
 
         txtPuntos=findViewById(R.id.txtPuntos);
 
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode==event.KEYCODE_BACK) {
+            Intent intent = new Intent(Pregunta1vegefrio.this, Habilidadesnew.class);
+            startActivity(intent);
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     @Override
@@ -121,8 +131,9 @@ public class Pregunta1vegefrio extends AppCompatActivity implements View.OnClick
                     public void run() {
                         //repollo.start();
                         Intent intent1 = new Intent(Pregunta1vegefrio.this, Pregunta2vegefrio.class);
-                        startActivity(intent1);
                         pregunta2papacolorada.start();
+                        startActivity(intent1);
+
                     }
                 };
                 Timer timer4 = new Timer();

@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.namuiwan.Menued;
 import com.example.namuiwan.R;
 
 public class Resultado extends AppCompatActivity implements View.OnClickListener{
@@ -23,6 +25,14 @@ public class Resultado extends AppCompatActivity implements View.OnClickListener
         txttotalpuntos = findViewById(R.id.txttotalpuntos);
         txttotalpuntos.setOnClickListener(this);
         Habilidadesnew.puntos =0;
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode==event.KEYCODE_BACK) {
+            Intent intent = new Intent(Resultado.this, Habilidadesnew.class);
+            startActivity(intent);
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.example.namuiwan.yatulve;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.namuiwan.Menued;
 import com.example.namuiwan.R;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -56,6 +58,14 @@ public class Pregunta1frutas extends AppCompatActivity implements View.OnClickLi
 
         //txtPregunta1 = findViewById(R.id.txtPregunta1);
     }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode==event.KEYCODE_BACK) {
+            Intent intent = new Intent(Pregunta1frutas.this, Habilidadesnew.class);
+            startActivity(intent);
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 
     @Override
     public void onClick(View v) {
@@ -75,8 +85,8 @@ public class Pregunta1frutas extends AppCompatActivity implements View.OnClickLi
                     @Override
                     public void run() {
                         //uchuva.start();
-                        Intent intent = new Intent(Pregunta1frutas.this, Pregunta2frutas.class);
-                        startActivity(intent);
+                        Intent intent1 = new Intent(Pregunta1frutas.this, Pregunta2frutas.class);
+                        startActivity(intent1);
                         Pregunta2mortino.start();
                     }
                 };

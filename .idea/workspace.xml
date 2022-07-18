@@ -16,16 +16,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03b09879-0e66-4bbf-b119-68d038f1c211" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_07_2022_11_30_a__m__[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_07_2022_11_30_a__m___Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Namuiwan.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Namuiwan.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_06_2022_8_27_a__m___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_06_2022_8_27_a__m___Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Habilidadesnew.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Habilidadesnew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta1frutas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta1frutas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta1numeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta1numeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta1vegefrio.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta1vegefrio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta2frutas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta2frutas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta2numeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta2numeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta2vegefrio.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta2vegefrio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta3frutas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta3frutas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta3numeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta3numeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta3verdura.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta3verdura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta4numeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta4numeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta5numeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Pregunta5numeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Resultado.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/namuiwan/yatulve/Resultado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta1numeros.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta1numeros.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta2numeros.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta2numeros.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta3numeros.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta3numeros.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta4numeros.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta4numeros.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta5numeros.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_pregunta5numeros.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pregunta5numeros.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pregunta5numeros.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\danii\.android\avd\Pixel_2_API_30_1.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\JANUS\.android\avd\Pixel_3a_XL_API_30_1.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

@@ -3,6 +3,7 @@ package com.example.namuiwan.yatulve;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.namuiwan.Josue.JuegosCJ;
 import com.example.namuiwan.R;
 
 import java.util.Timer;
@@ -102,15 +104,36 @@ public class Pregunta1numeros extends AppCompatActivity implements View.OnClickL
         imgVeinte.setOnClickListener(this);
         imgParlanteve = findViewById(R.id.imgParlanteve);
         imgParlanteve.setOnClickListener(this);
-        imageView4=findViewById(R.id.imageView4);
-        imageView4.setOnClickListener(this);
+        //imageView4=findViewById(R.id.imageView4);
+        //imageView4.setOnClickListener(this);
+
 
         pregunta1 = MediaPlayer.create(this, R.raw.pregunta1cualeseluno);
         pregunta2 = MediaPlayer.create(this, R.raw.pregunta2cualeselcuatro);
 
         txtPuntos=findViewById(R.id.txtPuntos);
 
-        //serpiente = MediaPlayer.create(this, R.raw.numerosve);
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode==event.KEYCODE_BACK) {
+            Intent intent = new Intent(Pregunta1numeros.this, Habilidadesnew.class);
+            startActivity(intent);
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    private void hacerSonarNumero(MediaPlayer number2) {
+        TimerTask esperar2 = new TimerTask() {
+            @Override
+            public void run() {
+
+                number2.start();
+
+            }
+        };
+        Timer timer2 = new Timer();
+        timer2.schedule(esperar2,1500);
     }
 
     @Override
@@ -125,10 +148,13 @@ public class Pregunta1numeros extends AppCompatActivity implements View.OnClickL
                 puntos = puntos + 2;
                 txtPuntos.setText(" "+puntos);
                 correcto.start();
+                if(puntos<0){
+                    puntos=0;
+                }
                 Habilidadesnew.puntos = puntos;
-                Intent intent = new Intent(Pregunta1numeros.this, Pregunta2numeros.class);
-                startActivity(intent);
-                hacerSonarNumero(pregunta2);
+                Intent intent2 = new Intent(Pregunta1numeros.this, Pregunta2numeros.class);
+                pregunta2.start();
+                startActivity(intent2);
                 break;
             case R.id.imgDos:
                 puntos = puntos - 1;
@@ -244,22 +270,12 @@ public class Pregunta1numeros extends AppCompatActivity implements View.OnClickL
                 incorrecto.start();
                 hacerSonarNumero(num20);
                 break;
-            case R.id.imageView4:
+            /*case R.id.imageView4:
                 Toast.makeText(Pregunta1numeros.this, "numeros...?", Toast.LENGTH_SHORT).show();
                 hacerSonarNumero(sonido);
-                break;
+                break;*/
         }
     }
 
-    private void hacerSonarNumero(MediaPlayer number) {
-        TimerTask espera = new TimerTask() {
-            @Override
-            public void run() {
 
-                number.start();
-            }
-        };
-        Timer timer = new Timer();
-        timer.schedule(espera,1000);
-    }
 }

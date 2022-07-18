@@ -15,7 +15,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Frutas extends AppCompatActivity implements View.OnClickListener {
-    ImageView imgUchuvas, imgMora, imgMortino, imgFresas,imgPregunta,titlemora,titlefresas,titlemortino,titleuchuvas;
+    ImageView imgUchuvas, imgMora, imgMortino, imgFresas,titlemora,titlefresas,titlemortino,titleuchuvas;
     MediaPlayer uchuvas, mora, mortino, fresas, pregunta1;
     int valor = 0;
     @Override
@@ -25,8 +25,6 @@ public class Frutas extends AppCompatActivity implements View.OnClickListener {
         referenciar();
     }
     private void referenciar(){
-        imgPregunta = findViewById(R.id.imgPregunta);
-        imgPregunta.setOnClickListener(this);
         imgUchuvas= findViewById(R.id.imgUchuvas);
         imgUchuvas.setOnClickListener(this);
         imgMora=findViewById(R.id.imgMora);
@@ -58,29 +56,12 @@ public class Frutas extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.imgPregunta:
-                   Toast.makeText(Frutas.this, "¿Cual es la uchuva...?", Toast.LENGTH_SHORT).show();
-                   Intent intent1 = new Intent(Frutas.this, Pregunta1frutas.class);
-                   startActivity(intent1);
-                   pregunta1.start();
-                   valor = 1;
-                break;
-
             case R.id.imgUchuvas:
                 titlemora.setVisibility(View.INVISIBLE);
                 titlemortino.setVisibility(View.INVISIBLE);
                 titlefresas.setVisibility(View.INVISIBLE);
                 titleuchuvas.setVisibility(View.VISIBLE);
                 uchuvas.start();
-                /*TimerTask esperar1 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        titleuchuvas.setVisibility(View.INVISIBLE);
-
-                    }
-                };
-                Timer timer1 = new Timer();
-                timer1.schedule(esperar1,1400);*/
                 break;
 
             case R.id.imgMora:
@@ -89,14 +70,6 @@ public class Frutas extends AppCompatActivity implements View.OnClickListener {
                 titleuchuvas.setVisibility(View.INVISIBLE);
                 titlemora.setVisibility(View.VISIBLE);
                 mora.start();
-                /*TimerTask esperar2 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        titlemora.setVisibility(View.INVISIBLE);
-                    }
-                };
-                Timer timer2 = new Timer();
-                timer2.schedule(esperar2,1400);*/
                 break;
 
             case R.id.imgMortino:
@@ -105,14 +78,6 @@ public class Frutas extends AppCompatActivity implements View.OnClickListener {
                 titlemora.setVisibility(View.INVISIBLE);
                 titlemortino.setVisibility(View.VISIBLE);
                 mortino.start();
-                /*TimerTask esperar3 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        titlemortino.setVisibility(View.INVISIBLE);
-                    }
-                };
-                Timer timer3 = new Timer();
-                timer3.schedule(esperar3,1400);*/
                 break;
             case R.id.imgFresas:
                 titleuchuvas.setVisibility(View.INVISIBLE);
@@ -120,15 +85,6 @@ public class Frutas extends AppCompatActivity implements View.OnClickListener {
                 titlemortino.setVisibility(View.INVISIBLE);
                 titlefresas.setVisibility(View.VISIBLE);
                 fresas.start();
-
-                /*TimerTask esperar4 = new TimerTask() {
-                    @Override
-                    public void run() {
-                        titlefresas.setVisibility(View.INVISIBLE);
-                    }
-                };
-                Timer timer4 = new Timer();
-                timer4.schedule(esperar4,1400);*/
                 break;
         }
     }
